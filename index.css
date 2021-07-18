@@ -21,6 +21,8 @@ html{
 
 
 nav{
+    display: flex;
+    flex-direction: column;
     align-items: center;
     background-color: #434780;
     padding: 1em;
@@ -30,8 +32,6 @@ nav{
 
 .tabs-nav{
     display: none;
-    margin-right: 3em;
-    float: left;
 }
 
 .tabs-nav a{
@@ -41,9 +41,8 @@ nav{
     font-size: 18px;
     color: aliceblue;
     transition-duration: 0.4s;
-    padding: 10px;
     border-color: aliceblue;
-    padding: 14px
+    padding: 14px 0 14px 14px;
 }
 
 .tabs-nav a:hover{
@@ -229,7 +228,8 @@ footer{
 /*for website */
 @media (min-width: 376px){
     nav{
-        background-color: red;
+        background-color:#434780;
+        padding: 1em 2em 1em 2em;
     }
 
     .logo-nav img{
@@ -237,9 +237,24 @@ footer{
     }
 
     .logo-name a{
-        display:inline-block;
-
+        display:block;
     }
+
+    .tabs-nav a{
+        display: block;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 18px;
+        color: aliceblue;
+        transition-duration: 0.4s;
+        padding: 10px;
+        border-radius: 20%;
+        border-color: aliceblue;
+        }
+    
+        .landing-container{
+            flex-direction: row;
+        }
 }
 
 /*
