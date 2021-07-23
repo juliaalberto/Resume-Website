@@ -8,3 +8,36 @@ function changemenu(x) {
     y.style.display = "block";
   }
 }
+
+function changecard1(q) {
+  q.classList.toggle("turn");
+
+  var t = document.getElementById("project-context1");
+  if (t.style.display === "block") {
+    t.style.display = "none";
+  } else {
+    t.style.display = "block";
+  } 
+}
+
+function changecard2(q) {
+  q.classList.toggle("turn");
+
+  var t = document.getElementById("project-context2");
+  if (t.style.display === "block") {
+    t.style.display = "none";
+  } else {
+    t.style.display = "block";
+  } 
+}
+
+function changecard3(q) {
+  q.classList.toggle("turn");
+
+  var t = document.getElementById("project-context3");
+  if (t.style.display === "block") {
+    t.style.display = "none";
+  } else {
+    t.style.display = "block";
+  } 
+}

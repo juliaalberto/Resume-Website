@@ -9,13 +9,14 @@
 html{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scroll-behavior: smooth;
+    background-color:aliceblue;
 }
 
 body{
     margin:0;
 }
 
-.about-container, .projects-container, .skills-container{
+.about-container, .projects-section, .skills-container{
     text-align: center;
     padding: 2em;
 }
@@ -128,7 +129,7 @@ nav{
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 2em 0 1em 0;
+    padding: 1em 0 1em 0;
 }
 
 .landing-image img{
@@ -146,7 +147,7 @@ nav{
     padding: 15px;
     border-radius: 10%;
     font-size: 30px;
-    border-color: aliceblue;
+    border: solid aliceblue 5px;
 }
 .landing-text button:hover{
     background-color:#004AAD;
@@ -157,18 +158,24 @@ nav{
 
 /* Arrow */
 
-.arrow{
-    height: 5em;
-    width: 5em;
-    border-radius: 50%;
-    background-color: aquamarine;
-    margin: 2.5em auto 1em auto;
+.arrow-top{
+    border: solid aliceblue;
+    border-width: 0 10px 10px 0;
+    padding: 1em;
+    display: inline-block;
+    margin: 2em;
+}
+
+.arrow-up{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s infinite;
+    animation: bounce 2s;
+    animation-iteration-count: 3;
   }
   
 @keyframes bounce {
@@ -210,7 +217,7 @@ nav{
 
 /* Projects */
 
-.projects-container{
+.projects-section{
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -219,22 +226,55 @@ nav{
 }
 
 #project-card{
-    display: flex;
-    flex-direction: column;
-    background-color: red;
+    background-color:aliceblue;
     width: 80%;
     margin: auto;
     align-items: center;
     padding: 2em;
     border-radius: 10%;
     margin: 1em;
+    border:2px solid black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-#project-img{
-    display: block;
-    height: 10em;
-    width: 10em;
-    background-color: blue;
+#project-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#project-button{
+    text-decoration: none;
+    font-size: 18px;
+    background-color: aliceblue;
+    border: none;
+    margin: 1em;
+}
+
+#project-arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    margin: 2em;
+    background-color: aliceblue;
+    transition: all 0.5s;
+}
+
+#project-arrow:hover {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+}
+
+#project-arrow:active {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); 
+}
+
+#project-context1, #project-context2, #project-context3{
+    display: none;
 }
 
 
