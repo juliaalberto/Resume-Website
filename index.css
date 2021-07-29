@@ -18,7 +18,8 @@ body{
 
 .about-container, .projects-section, .skills-container{
     text-align: center;
-    padding: 2em;
+    margin: 0em 2em 0 2em;
+    padding: 1em 0 1em 0;
 }
 
 
@@ -63,9 +64,9 @@ nav{
 }
 
 .logo-nav img{
-    width: 3em;
-    height:3em;
-    image-rendering: crisp-edges;
+    width: 3.5em;
+    height:3.5em;
+    image-rendering:optimizeQuality;
 }
 
 .logo-name a{
@@ -83,7 +84,7 @@ nav{
 .hamburger {
     cursor: pointer;
     position: absolute;
-    top:1.25em;
+    top:1.6em;
     right:1em;
   }
   
@@ -158,27 +159,28 @@ nav{
 
 /* Arrow */
 
-.arrow-top{
-    border: solid aliceblue;
-    border-width: 0 10px 10px 0;
-    padding: 1em;
-    display: inline-block;
-    margin: 2em;
-}
-
-.arrow-up{
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-.bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 2s;
-    animation-iteration-count: 3;
+.arrow-wrap {
+    position: relative;
+    -webkit-animation: arrow 2s infinite ;
+    -moz-animation: arrow 2s infinite ;
+    animation: arrow 2s;
+    animation-iteration-count: 5;
   }
   
-@keyframes bounce {
+  .arrow {
+    padding: 15px;
+    border-left: solid 10px aliceblue;
+    border-bottom: solid 10px aliceblue;
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+  }
+  
+  .arrow-down {
+    transform: rotate(-45deg);
+  }
+
+  @keyframes arrow {
     0%, 20%, 50%, 80%, 100% {
       transform: translateY(0);
     }
@@ -189,7 +191,6 @@ nav{
       transform: translateY(-15px);
     }
 }
-
 /* about */
 
 
@@ -204,15 +205,25 @@ nav{
     height: 60%;
     width: 100%;
     border-radius: 50%;
+    margin-bottom: 1em;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.about-text{
-    padding-top: 1em;
+.about-text{    
     color: black;
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 25px;;
+    
 }
 
+.about-container h4{
+    margin: 1em 0 0 0;
+}
+
+.about-text a{
+    text-decoration: none;
+    color:#004AAD;
+}
 
 
 /* Projects */
@@ -220,7 +231,6 @@ nav{
 .projects-section{
     display: flex;
     flex-direction: column;
-    margin: auto;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -230,11 +240,11 @@ nav{
     width: 80%;
     margin: auto;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
     border-radius: 10%;
     margin: 1em;
-    border:2px solid black;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: none;
+    box-shadow: 0 12px 25px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 #project-top{
@@ -253,9 +263,9 @@ nav{
 
 #project-arrow{
     border: solid black;
-    border-width: 0 3px 3px 0;
+    border-width: 0 5px 5px 0;
     display: inline-block;
-    padding: 5px;
+    padding: 8px;
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
     margin: 2em;
@@ -301,7 +311,7 @@ footer{
 }
   
 ::-webkit-scrollbar-thumb {
-    background:#004AAD;
+    background:rgba(0,0,0,0.24);
 }
 
 /*for website */
