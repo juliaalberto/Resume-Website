@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="nav_about.css">
 	<script type="text/javascript" src="myscripts.js"></script>
 	<title> Julia Alberto </title>
 </head>
@@ -17,12 +18,15 @@
 		<b><a href = #homepage>JULIA ALBERTO</a></b>
 	</div>
 
+	<button type = "button">
+		button
+	</button>
+
 	<div class = "tabs-nav" id = "myLinks">
 		<a href="#homepage">Home</a>
 		<a href="#aboutpage">About</a>
 		<a href="#projectspage">Projects</a>
 		<a href="#contactpage">Contact</a>
-		<a>ON/OFF</a>
 	</div>
 	
 	<div class="hamburger" onclick="changemenu(this)">
@@ -55,34 +59,33 @@
 			</div>
 		</a>
 	</div>
-
-
-
 </div>
 
 
 
 
-
-<div class = "about-container" id ="aboutpage">
-	<div class = "about-card">
-		<h2>About Me</h2>
-		<div class = "about-image">
-			<img src="profilepic.png">
-		</div>
-		<h4>Hello World!</h4>
-		<div class = "about-text">
-			<p> My name is Julia Alberto! I am an undergraduate student <b><a href = "https://www.ucdavis.edu/majors/cognitive-science"> 
-				majoring in Cognitive Science </a></b>and <b><a href = "https://cs.ucdavis.edu/"> minoring in 
-				Computer Science </a></b> at UC Davis! My long-term goal is to be a full-stack developer 
-				designing accessible, interactive, and efficient web and mobile applications for all abilities and 
-				ages. Additionally, I hope to promote social and environmental 
-				change, awareness, and acceptance through different experiences and applications.
-			</p>
-			<p> When I am not busy tinkering with a coding project, I enjoy chilling with my 
-				dog Maki, crafting a new art project, and strolling through a calming nature
-				 walk. I like to blend my style with my analytical thinking and artistic 
-				 creativity to create a unique experience for myself and for everyone I would share my experience with.</p>
+<div id ="aboutpage">
+	<h2 style = "text-align: center">About Me</h2>
+	<div class = "about-container" >
+		<div class = "about-card">
+			<div class = "about-image">
+				<img src="profilepic.png">
+				<h4>Hello World!</h4>
+			</div>
+			
+			<div class = "about-text">
+				<p> My name is Julia Alberto! I am an undergraduate student <b><a href = "https://www.ucdavis.edu/majors/cognitive-science"> 
+					majoring in Cognitive Science </a></b>and <b><a href = "https://cs.ucdavis.edu/"> minoring in 
+					Computer Science </a></b> at UC Davis! My long-term goal is to be a full-stack developer 
+					designing accessible, interactive, and efficient web and mobile applications for all abilities and 
+					ages. Additionally, I hope to promote social and environmental 
+					change, awareness, and acceptance through different experiences and applications.
+				</p>
+				<p> When I am not busy tinkering with a coding project, I enjoy chilling with my 
+					dog Maki, crafting a new art project, and strolling through a calming nature
+					walk. I like to blend my style with my analytical thinking and artistic 
+					creativity to create a unique experience for myself and for everyone I would share my experience with.</p>
+			</div>
 		</div>
 	</div>
 </div>
@@ -92,22 +95,34 @@
 	<h2>Skills</h2>
 </div>
 
-<div class = "projects-section" id = "projectspage">
-		<h2>Projects</h2>
+<div id = "projectspage">
+	<h2 style = "text-align: center">Projects</h2>
+	<div class = "projects-section" >
+
+		<!--card 1-->
 		<div id = "project-card" onclick="changecard1(this)">
-			<div id = "project-top">
-				<button type = "button" id = "project-button" > Project 1 </button>
+			<!-- card title 1-->
+			<div id = "project-top"> 
+				<button type = "button" id = "project-button" > 
+					<h2>Personal Website </h2>
+					<h3>September 2020 </h3>
+				</button>
 				<button type = "button" id = "project-arrow"> </button>	
 			</div>
-		<div id = "project-context1">
+			<!--card context 1-->
+			<div id = "project-context1">
 				<a href = "#"></a>
-				<p>info about project</p>
+				<p> A porfolio website where I can explain and demonstrate </p>
 			</div>
 		</div>
 
+		<!--card 2-->
 		<div id = "project-card" onclick="changecard2(this)">
 			<div id = "project-top">
-				<button type = "button" id = "project-button" > Project 1 </button>
+				<button type = "button" id = "project-button" > 
+					<h2>Personal Website </h2>
+					<h3>September 2020 </h3>
+				</button>
 				<button type = "button" id = "project-arrow"> </button>	
 			</div>
 		<div id = "project-context2">
@@ -118,7 +133,10 @@
 
 		<div id = "project-card" onclick="changecard3(this)">
 			<div id = "project-top">
-				<button type = "button" id = "project-button" > Project 1 </button>
+				<button type = "button" id = "project-button" > 
+					<h2>Personal Website </h2>
+					<h3>September 2020 </h3>
+				</button>
 				<button type = "button" id = "project-arrow"> </button>	
 			</div>
 		<div id = "project-context3">
@@ -126,7 +144,19 @@
 				<p>info about project</p>
 			</div>
 		</div>
-		
+<!--
+		<div id = "project-card" onclick="changecard4(this)">
+			<div id = "project-top">
+				<button type = "button" id = "project-button" > Project 1 </button>
+				<button type = "button" id = "project-arrow"> </button>	
+			</div>
+		<div id = "project-context4">
+				<a href = "#"></a>
+				<p>info about project</p>
+		</div>
+		</div>
+	-->
+	</div>
 </div>
 
 

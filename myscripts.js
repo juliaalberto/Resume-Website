@@ -41,3 +41,14 @@ function changecard3(q) {
     t.style.display = "block";
   } 
 }
+
+function changecard4(q) {
+  q.classList.toggle("turn");
+
+  var t = document.getElementById("project-context4");
+  if (t.style.display === "block") {
+    t.style.display = "none";
+  } else {
+    t.style.display = "block";
+  } 
+}
