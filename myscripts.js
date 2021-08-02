@@ -52,3 +52,8 @@ function changecard4(q) {
     t.style.display = "block";
   } 
 }
+
+function darkFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
